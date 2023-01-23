@@ -1,6 +1,6 @@
 # Personal Portfolio Site
 
-My personal portfolio site. Can be viewed at [Momore's Portfolio](momoreayinde.dev)
+My personal portfolio site. Can be viewed at (momoreayinde.dev)
 
 ## Built with
 
