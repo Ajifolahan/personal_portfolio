@@ -324,6 +324,11 @@ span {
     .portfolio {
         display:block;
     }
+
+    .portfolio__img {
+        min-width: 450px;
+        max-width: 100%;
+    }
 }
 
 /* Skills */
