@@ -320,7 +320,7 @@ span {
     transform: translateY(0);
     opacity: 1;
 }
--
+
 @media screen and (max-width: 860px) {
     .portfolio {
         display:flex;
