@@ -320,7 +320,7 @@ span {
     transform: translateY(0);
     opacity: 1;
 }
-
+-
 @media screen and (max-width: 860px) {
     .portfolio {
         display:flex;
@@ -328,7 +328,7 @@ span {
     }
 
     .portfolio__img {
-        min-width: 450px;
+        min-width: 350px;
         max-width: 100%;
     }
 }
@@ -382,6 +382,21 @@ span {
 
 .coding__img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 860px) {
+    .skills__img {
+        grid-template-columns: repeat(2, auto);
+        padding-left: 0em;
+    }
+
+    .coding__img {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+   
 }
 
 /* Education */
