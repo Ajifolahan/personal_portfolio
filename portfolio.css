@@ -291,6 +291,10 @@ header {
     align-items: center;
 }
 
+.game__img {
+    margin-right: 10px;
+  }
+
 span {
     color: grey;
     font-weight: var(--fw-bold);
