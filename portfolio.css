@@ -6,9 +6,8 @@
 }
 
 :root {
-    --ff-primary: 'Open Sans', sans-serif;
-    --ff-secondary: 'Roboto', sans-serif;
-    --ff-third: 'Playfair Display', serif;
+    --ff-light: 'Roboto', sans-serif;
+    --ff-dark: 'Rubik', sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -16,6 +15,7 @@
     --clr-light: #011F26;
     --clr-dark: beige;
     --clr-accent: #027368;
+
 
     --fs-h1: 2.5rem;
     --fs-h2: 1.75rem;
@@ -38,7 +38,7 @@ body {
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-dark);
     font-size: var(--fs-body);
     line-height: 1.6;
 }
@@ -59,7 +59,6 @@ section {
 }
 
 /* Typography */
-
 h1,
 h2,
 h3 {
@@ -69,13 +68,13 @@ h3 {
 
 h2,
 h3 {
-    font-family: var(--ff-primary);
+    font-family: var(--ff-light);
 }
 
 
 h1 {
     font-size: var(--fs-h1);
-    font-family: var(--ff-third);
+    font-family: var(--ff-light);
 }
 
 h2 {
@@ -88,7 +87,6 @@ h3 {
 
 
 /* Button */
-
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
@@ -140,7 +138,6 @@ h3 {
 }
 
 
-
 .section__title {
     margin-bottom: .25em;
 }
@@ -160,7 +157,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--skills {
     padding: .25em 2em;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-light);
     margin-bottom: 1em;
 }
 
@@ -171,6 +168,7 @@ header {
     justify-content: right;
     padding: 1em;
     background: var(--clr-dark);
+    
 }
 
 .nav {
@@ -190,7 +188,7 @@ header {
 .nav__link {
     color:#032612;
     font-weight: var(--fw-reg);
-    font-size: var(--fs-h3);
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -202,7 +200,6 @@ header {
 
 
 /* Intro Section */
-
 .intro {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -262,11 +259,22 @@ header {
 
 /* Project */
 .projects {
-    margin: 0 auto;
     background-color: var(--clr-light);
     background-size: cover;
     color: var(--clr-dark);
     display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media(max-width: 600px) {
+    .projects {
+        margin: 0 auto;
+        background-color: var(--clr-light);
+        background-size: cover;
+        color: var(--clr-dark);
+        display: block;
+    }
 }
 
 .color__name--projects {
@@ -274,17 +282,17 @@ header {
 }
 
 .section__title--work {
-    font-family: var(--ff-third);
+    font-family: var(--ff-dark);
     text-align: center;
 }
 
 .project_dets {
     padding-left: 20px;
-    /* float: right; */
     line-height: 1em;
     margin-right: 1em;
-    text-align: justify;
+    text-align: left;
 }
+
 
 .aligned {
     display: flex;
@@ -314,9 +322,8 @@ span {
 
 .portfolio__img {
     margin-bottom: 40px;
-    min-width: 450px;
-    max-width: 100%;
-    /* width: 100%; */
+    min-width:400px;
+    max-height: 350px;
 }
 
 
@@ -340,20 +347,16 @@ span {
 /* Skills */
 .tech__skills {
     margin: 0 auto;
-    background-color: #111;
-    background-size: cover;
+    background-color: #808080;
+     background-size: cover;
     background-blend-mode: multiply;
     color: white;
     text-align: center;
 }
 
 .section__title--skills {
-    color: beige;
-    font-family: var(--ff-third);
-}
-
-.color__name--projects {
-    color: beige;
+    color: var(--clr-accent);
+    font-family: var(--ff-dark);
 }
 
 .section__title--skills {
@@ -404,18 +407,20 @@ span {
 }
 
 /* Education */
-.about__education,
-.education__image,
-.education__details {
+.about__education {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.education__image {
     display: flex;
     padding: 10px;
-    border-radius: 50px;
-    margin: 10px;
-    background-color: var(--clr-accent);
 }
 
+
 .section__title--education {
-    font-family: var(--ff-third);
+    font-family: var(--ff-dark);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -428,6 +433,7 @@ span {
     display: block;
     font-size: 18px;
     line-height: 1em;
+    width: 300px;
 }
 
 .section__title--education {
@@ -442,9 +448,13 @@ span {
     opacity: 1;
 }
 
+.qu_img{
+    border-radius: 50px;
+}
+
 /* Footer */
 .footer {
-    background: #111;
+    background-color: #111;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
@@ -484,3 +494,19 @@ span {
 .social-list__link {
     padding: .5em;
 }
+
+.btn-red-show {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 10px;
+    background-color: var(--clr-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display:none;
+  }
+
+  .btn-red-show:focus{
+    outline : none;
+  }

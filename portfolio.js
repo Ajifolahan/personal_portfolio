@@ -49,3 +49,20 @@ function reveal3() {
   }
 
   window.addEventListener("scroll", reveal3);
+
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.addEventListener("scroll", () => {
+  const backToTopBtn = document.getElementById("back-to-top-btn");
+  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+
