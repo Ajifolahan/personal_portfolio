@@ -347,7 +347,7 @@ span {
 /* Skills */
 .tech__skills {
     margin: 0 auto;
-    background-color: #808080;
+    background-color: var(--clr-dark);
      background-size: cover;
     background-blend-mode: multiply;
     color: white;
