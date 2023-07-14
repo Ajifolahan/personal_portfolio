@@ -17,16 +17,16 @@ function reveal() {
   window.addEventListener("scroll", reveal);
 
   function reveal2() {
-    var reveals = document.querySelectorAll(".section__title--skills");
+    let reveals = document.querySelectorAll(".section__title--skills");
   
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
+    for (const element of reveals) {
+      let windowHeight = window.innerHeight;
+      let elementTop = element.getBoundingClientRect().top;
   
       if (elementTop < windowHeight) {
-        reveals[i].classList.add("active");
+        element.classList.add("active");
       } else {
-        reveals[i].classList.remove("active");
+        element.classList.remove("active");
       }
     }
   }
@@ -34,16 +34,16 @@ function reveal() {
   window.addEventListener("scroll", reveal2);
 
 function reveal3() {
-    var reveals = document.querySelectorAll(".section__title--education");
+    let reveals = document.querySelectorAll(".section__title--education");
   
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
+    for (const element of reveals) {
+      let windowHeight = window.innerHeight;
+      let elementTop = element.getBoundingClientRect().top;
   
       if (elementTop < windowHeight) {
-        reveals[i].classList.add("active");
+        element.classList.add("active");
       } else {
-        reveals[i].classList.remove("active");
+        element.classList.remove("active");
       }
     }
   }

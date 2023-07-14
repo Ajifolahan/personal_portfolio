@@ -356,9 +356,6 @@ span {
 .section__title--skills {
     color: var(--clr-accent);
     font-family: var(--ff-dark);
-}
-
-.section__title--skills {
     opacity: 0;
     transition: 0.5s all ease;
 }
@@ -422,6 +419,8 @@ span {
     font-family: var(--ff-dark);
     text-align: center;
     margin-bottom: 30px;
+    opacity: 0;
+    transition: 0.5s all ease;
 }
 
 .color__name--education {
@@ -433,11 +432,6 @@ span {
     font-size: 18px;
     line-height: 1em;
     width: 300px;
-}
-
-.section__title--education {
-    opacity: 0;
-    transition: 0.5s all ease;
 }
 
 .section__title--education.active {
