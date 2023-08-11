@@ -434,6 +434,13 @@ span {
     width: 300px;
 }
 
+.education__detailsQU {
+    /* display: block; */
+    font-size: 18px;
+    line-height: 1em;
+    width: 300px;
+}
+
 .section__title--education.active {
     transform: translateY(0);
     animation: bounce;
@@ -441,7 +448,7 @@ span {
     opacity: 1;
 }
 
-.qu_img{
+.ru_img{
     border-radius: 50px;
 }
 
